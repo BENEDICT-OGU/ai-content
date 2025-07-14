@@ -10,7 +10,7 @@ import Team from './components/Team'
 import Pricing from './components/Pricing'
 import Footer from './components/Footer'
 import './App.css'
-// import GetStarted from "./pages/GetStarted"
+import GetStarted from "./pages/GetStarted"
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
@@ -32,7 +32,7 @@ function App() {
           <Route path="/templates" element={<ContentTemplates darkMode={darkMode} />} />
           <Route path="/analytics" element={<Analytics darkMode={darkMode} />} />
           <Route path="/team" element={<Team darkMode={darkMode} />} />
-          {/* <Route path="/get-started" element={<GetStarted darkMode={darkMode} />} /> */}
+          <Route path="/get-started" element={<GetStarted darkMode={darkMode} />} />
           <Route path="/pricing" element={<Pricing darkMode={darkMode} />} />
         </Routes>
         
